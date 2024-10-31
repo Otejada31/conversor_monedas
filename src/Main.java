@@ -70,7 +70,7 @@ public class Main {
                 // Intentar capturar una moneda válida
                 while (true) {
                     try {
-                        System.out.print("\nSeleccione la moneda base (número entero): ");
+                        System.out.print("\nSeleccione la moneda base: ");
                         int monedaSeleccionada = Integer.parseInt(scanner.nextLine());
                         baseMoneda = MONEDAS.get(monedaSeleccionada);
                         if (baseMoneda != null) {
@@ -121,7 +121,7 @@ public class Main {
         // Intentar capturar una moneda válida
         while (true) {
             try {
-                System.out.print("Selecciona la moneda a la que deseas convertir (número entero): ");
+                System.out.print("Selecciona la moneda a la que deseas convertir: ");
                 int monedaObjetivoSeleccionada = Integer.parseInt(scanner.nextLine());
                 monedaObjetivo = MONEDAS.get(monedaObjetivoSeleccionada);
                 if (monedaObjetivo != null) {
@@ -139,7 +139,7 @@ public class Main {
         // Intentar capturar un importe válido
         while (true) {
             try {
-                System.out.print("Ingresa el importe a convertir (número entero): ");
+                System.out.print("Ingresa el importe a convertir: ");
                 importe = Integer.parseInt(scanner.nextLine());
                 if (importe > 0) {
                     break;
@@ -180,7 +180,7 @@ public class Main {
         // Intentar capturar una moneda válida
         while (true) {
             try {
-                System.out.print("Selecciona la moneda de la cual deseas ver la cotización (número entero): ");
+                System.out.print("Selecciona la moneda de la cual deseas ver la cotización: ");
                 int monedaSeleccionada = Integer.parseInt(scanner.nextLine());
                 moneda = MONEDAS.get(monedaSeleccionada);
                 if (moneda != null) {
